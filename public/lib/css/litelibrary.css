@@ -1,0 +1,634 @@
+* {
+
+    font-family: Droid, "文泉驛微米黑", Arial, Verdana, "微軟正黑體", Droid;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color:#181818;
+    margin: 0;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+/*table {*/
+    /*empty-cells: show;*/
+    /*border: 1;*/
+    /*border-collapse: collapse;*/
+/*}*/
+
+/*p {*/
+    /*margin: 0.2em 0 1.2em 0;*/
+    /*padding: 0.3em;*/
+/*}*/
+
+h1 {
+
+    font-size: 32pt;
+    font-style: italic;
+    font-weight: bold;
+    color: mediumvioletred;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+h2 {
+    color: #78b73e;
+    /*font-size: 90%;*/
+    font-style: normal;
+    border-bottom: 1px #cccccc dashed;
+    font-weight: bold;
+}
+
+legend {
+    font-size:20pt;
+    padding:0.2em 0;
+    margin-bottom:0.5em;
+    /*border-bottom-style:dotted;*/
+    /*border-bottom-color: mediumvioletred;*/
+
+    border-left-style:solid;
+    border-left-width: 8px;
+    border-left-color: mediumvioletred;
+}
+
+input, button, select, area {
+    height: 25px;
+    font-size: 12pt;
+
+}
+
+select:hover, input:hover {
+    border-color: #18C0DF;
+}
+
+input:focus{
+    border-color: #18C0DF;
+    -webkit-border-image: -webkit-gradient(linear, left top, left bottom, from(#00abeb), to(#fff), color-stop(0.5, #fff), color-stop(0.5, #66cc00)) 21 30 30 21 repeat repeat;
+}
+
+
+
+a:link, a:visited {
+    color: #F0c030;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #3B4471;
+    text-decoration: none;
+}
+
+a:active {
+    color: #8CD749;
+    text-decoration: underline;
+}
+
+#container {
+    width:960px;
+    background-color: #eee;
+    margin: 0 auto;
+}
+
+
+#header,#content,#footer{
+    min-height: 100px;
+}
+
+#header {
+
+    width:100%;
+}
+#content {
+    width: 940px;
+    margin: 0 auto;
+    min-height: 300px;
+}
+#footer {
+    height: 100px;
+    max-height: 100px;
+    background-color: #555555;
+    text-align:right;
+    padding:0.4em;
+    clear: both;
+}
+#footer > ul{
+    list-style-type: none;
+    font-style: italic;
+}
+
+
+#title {
+    height:100px;
+    background-color: #444;
+}
+
+#title > h1 {
+    padding:0.4em;
+}
+
+
+
+#navbar {
+    background-color: #333333;
+}
+
+#navbar > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar > ul > li  {
+    /*background-color: #555;*/
+    display: inline-block;
+    width: 140px;
+    min-width: 50px;
+    max-width: 200px;
+    text-align: center;
+}
+
+#navbar > ul > li > a {
+    display: block;
+    width: 140px;
+    background-color: #333333;
+    height: 40px;
+    line-height: 40px;
+}
+
+#navbar > ul > li > a:hover {
+    /*border-width: 1px;*/
+    /*border-style: dotted;*/
+    /*border-color: mediumvioletred;*/
+    /*color: hotpink;*/
+    color: #333;
+    background-color: #c7c78f;
+    font-weight: bold;
+
+}
+
+
+
+
+#content {
+    /*background-color: red;*/
+    /*margin: 2em auto;*/
+    /*margin-top:2em;*/
+    text-align: left;
+    /*height:500px;*/
+}
+
+
+
+
+
+
+/************************************************************/
+/*.container {*/
+    /*margin: 0 auto 0 auto;*/
+    /*padding: 0;*/
+    /*width: 100%;*/
+    /*background-image: url(footer.jpg);*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: left bottom;*/
+/*}*/
+
+/************************************************************/
+/*   標題區塊      */
+/************************************************************/
+/*.titleblock {*/
+    /*text-align: left;*/
+    /*background-image: url(../../images/h_osw3.jpg);*/
+    /*background-position: top right;*/
+    /*height: 142px;*/
+    /*background-repeat: no-repeat;*/
+/*}*/
+
+/*.titleblock > p {*/
+    /*color: #8ba249;*/
+    /*text-transform: lowercase;*/
+    /*text-indent: 1em;*/
+    /*font-style: normal;*/
+    /*font-size: 12pt;*/
+/*}*/
+
+/*.titleblock > h1 {*/
+    /*font-size: 20pt;*/
+    /*font-weight: bold;*/
+    /*height: 10px;*/
+/*}*/
+
+/************************************************************/
+/*   navbar 屬性設定     */
+/************************************************************/
+/*.navbar {*/
+    /*clear: both;*/
+    /*list-style-type: none;*/
+    /*float: left;*/
+    /*display: block;*/
+    /*width: 100%;*/
+    /*line-height: 3em;*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+    /*background-color: #fafafa;*/
+    /*border-bottom: 1px #e7e7e7 solid;*/
+/*}*/
+
+/*.navbar > li {*/
+    /*display: inline;*/
+/*}*/
+
+/*.navbar a {*/
+    /*width: 140px;*/
+/*}*/
+
+/*.navbar > li > a :first-child{*/
+/*width:70px;*/
+/*}*/
+/************************************************************/
+
+/*.rightcontainer {*/
+    /*float: right;*/
+    /*clear: both;*/
+    /*width: 13em;*/
+    /*margin: 0.3em 0em 2em 0em;*/
+    /*padding-top: 0em;*/
+    /*padding-bottom: 0em;*/
+    /*background-color: #fafafa;*/
+/*}*/
+
+/*.rightbox {*/
+    /*margin: 0;*/
+    /*padding: 0em;*/
+    /*text-align: left;*/
+    /*border: 1px #ededed solid;*/
+    /*height: 100%;*/
+/*}*/
+
+/*.rightbox > a {*/
+    /*display: block;*/
+    /*padding-left: 1.2em;*/
+    /*padding-top: 0.2em;*/
+    /*height: 25px;*/
+/*}*/
+
+/*.rightbox > a:link, a:visited {*/
+    /*text-decoration: none;*/
+    /*background-color: #fafafa;*/
+    /*color: #5A5D00;*/
+    /*font-size: 1.0em;*/
+    /*font-weight: bold;*/
+/*}*/
+
+/*.rightbox > a:hover {*/
+    /*color: #ffffff;*/
+    /*background-color: #78b73e;*/
+/*}*/
+
+/*.rightcontainer h2 {*/
+    /*text-align: left;*/
+    /*padding: 0 0 0 0.5em;*/
+    /*font-size: 120%;*/
+/*}*/
+
+/*.linkbox a {*/
+    /*display: block;*/
+/*}*/
+
+/*.content {*/
+    /*clear: left;*/
+    /*text-align: left;*/
+    /*margin: 1.2em 13.5em 0 0;*/
+    /*padding: 0em 1ex 1em 1ex;*/
+/*}*/
+
+/*.content h2 {*/
+    /*text-indent: 3em;*/
+    /*font-size: 120%;*/
+    /*padding-top: 20px;*/
+/*}*/
+
+/*.content > h3 {*/
+    /*text-indent: 4em;*/
+    /*font-size: 100%;*/
+/*}*/
+
+/*.content span {*/
+    /*margin-left: 0em;*/
+/*}*/
+
+/*.content > div {*/
+    /*margin-left: 4em;*/
+/*}*/
+
+/*.content table {*/
+    /*margin-left: 0em;*/
+    /*width: 95%;*/
+/*}*/
+
+
+/************************************************************/
+/*   公告 屬性設定     */
+/************************************************************/
+.message {
+    width:515px;
+    height: 50px;
+    line-height: 50px;
+    margin-left: 7.3em;
+    border-width: 1px;
+    border-color: mediumvioletred;
+    border-style: dotted;
+    collapse: collapse;
+}
+
+.message > div > h3 {
+    font-size: 100%;
+}
+
+.message > div:hover {
+    border-style: dotted;
+}
+
+
+
+
+/************************************************************/
+/*   頁尾 屬性設定     */
+/************************************************************/
+.footer {
+    color: #000000;
+    padding-top: 0.2em;
+    text-align: right;
+    clear: both;
+    vertical-align: text-bottom;
+    font-size: 75%;
+    border-bottom: 1px #e3e3e3 solid;
+    background-image: url(../../images/footer.jpg);
+    background-repeat: no-repeat;
+    height: 162px;
+    border: 1px #FF0000 solid;
+}
+
+.footer .right {
+    float: right;
+    clear: right;
+    text-align: right;
+}
+
+.footer p {
+    margin: 0;
+}
+
+
+/************************************************************/
+/*   表格 屬性設定     */
+/************************************************************/
+.booklist {
+    width:96%;
+    empty-cells: show;
+    border: 1;
+    border-collapse: collapse;
+    border-color: #555;
+}
+
+.booklist > caption {
+    font-size: 16pt;
+}
+
+.booklist > thead > tr,th {
+    background-color: #555;
+    color: #eeeedd;
+    height: 32px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+
+.booklist input {
+    font-size: 100%;
+    padding: 0 0 0 0.25em;
+}
+
+.booklist input[type="submit"] {
+    width: 100%;
+    border-width: 1px;
+    border-color: black;
+    padding: 0 0 0 0;
+    height:20px;
+}
+
+.booklist > tbody > tr:hover {
+    /*background-color: #DEDFA5;*/
+    /*color: #2e4511;*/
+    background-color: #DEDFA5;
+    /*color: #DEDFA5;*/
+    /*font-weight:bold;*/
+}
+
+.booklist > tbody > tr:nth-child(even) {
+    background-color: #eed;
+}
+
+.booklist > tbody > tr:nth-child(even):hover {
+    background-color: #DEDFA5;
+}
+
+.booklist > tbody > tr > td {
+    padding: 0.3em 0.1em 0.3em 0.2em;
+    height: 26px;
+    border: 1px solid;
+}
+
+
+/************************************************************/
+/*   讀者資料表格      */
+/************************************************************/
+.userinfo {
+    empty-cells: show;
+    border: 1;
+    collapse: collapse;
+    width:420px;
+}
+
+.userinfo > tbody  td :nth-child(odd){
+    padding-left: 0.5em;
+}
+/************************************************************/
+
+/*#BookTableHeader > thead > tr {*/
+    /*height: 40px;*/
+    /*background-color: #999;*/
+
+/*}*/
+
+/*#BookTableHeader  tr > th, td {*/
+    /*border-width: 1px;*/
+    /*border-style: solid;*/
+    /*border-color: black;*/
+/*}*/
+
+/* 讀者編號,圖書編號 input */
+/*#ReaderID{*/
+    /*width:200px;*/
+/*}*/
+
+/*#BookNO {*/
+    /*width:300px;*/
+/*}*/
+
+
+
+
+/************************************************************/
+/*   <班級借閱統計> inner table 屬性設定     */
+/************************************************************/
+/*.bookstat {*/
+    /*empty-cells: show;*/
+    /*border: 1;*/
+    /*border-collapse: collapse;*/
+
+    /*border-color: #555555;*/
+    /*background-color: #fcffcf;*/
+/*}*/
+
+/*.bookstat tr > :first-child {*/
+    /*font-weight: bold;*/
+    /*color: #333;*/
+/*}*/
+
+/*.bookstat tr > td:hover {*/
+    /*background-color: #ffd1cf;*/
+/*}*/
+
+/************************************************************/
+
+/* 銵冽 - 雿輻���*/
+/*.login {*/
+
+/*}*/
+
+/*.text-red {*/
+    /*color: #FF0000;*/
+/*}*/
+
+/*.text-blue {*/
+    /*font-weight: bold;*/
+    /*font-size: 110%;*/
+    /*color: white;*/
+    /*background-color: blue;*/
+/*}*/
+
+/*.gradeColor1 {*/
+    /*background-color: #E9FFFF;*/
+/*}*/
+
+/*.gradeColor2 {*/
+    /*background-color: #E9FFFF;*/
+/*}*/
+
+/*.gradeColor3 {*/
+    /*background-color: #FFFEDF;*/
+/*}*/
+
+/*.gradeColor4 {*/
+    /*background-color: #FFFEDF;*/
+/*}*/
+
+/*.gradeColor5 {*/
+    /*background-color: #FFDFDF;*/
+/*}*/
+
+/*.gradeColor6 {*/
+    /*background-color: #FFDFDF;*/
+/*}*/
+
+/*.fontred {*/
+    /*color: red;*/
+/*}*/
+
+/*.fontblue {*/
+    /*color: blue;*/
+/*}*/
+
+
+
+.form-signin
+{
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+.form-signin .form-signin-heading, .form-signin .checkbox
+{
+    margin-bottom: 10px;
+}
+.form-signin .checkbox
+{
+    font-weight: normal;
+}
+.form-signin .form-control
+{
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.form-signin .form-control:focus
+{
+    z-index: 2;
+}
+.form-signin input[type="text"]
+{
+    margin-bottom: -1px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.form-signin input[type="password"]
+{
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.account-wall
+{
+    width:400px;
+    margin-top: 20px;
+    padding: 40px 0px 20px 0px;
+    background-color: #f7f7f7;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.login-title
+{
+    color: #555;
+    font-size: 18px;
+    font-weight: 400;
+    display: block;
+}
+.profile-img
+{
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 10px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+.need-help
+{
+    margin-top: 10px;
+}
+.new-account
+{
+    display: block;
+    margin-top: 10px;
+}
